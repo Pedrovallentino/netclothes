@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netclothes | Sua Loja de Roupas Online</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">Netclothes</a></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li class="search-container">
+                    <form action="search.html" method="get">
+                        <input type="search" name="q" placeholder="Buscar no site...">
+                        <button type="submit">Pesquisar</button>
+                    </form>
+                </li>
+                <li id="login-link"><a href="login.html">Login</a></li>
+            </ul>
+            <button class="hamburger-menu">☰</button>
+            <button id="theme-toggle">☀️</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carousel-section">
+            <h2>Nossos Destaques</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide active" data-slide-id="1" data-image-url="[COLOQUE O LINK DA FOTO DO BANNER 1 AQUI]">
+                    <h3>Nova Coleção Verão 2025</h3>
+                    <p>Peças leves e frescas para a estação mais quente do ano.</p>
+                </div>
+                <div class="carousel-slide" data-slide-id="2" data-image-url="[COLOQUE O LINK DA FOTO DO BANNER 2 AQUI]">
+                    <h3>Até 50% de Desconto</h3>
+                    <p>Aproveite nossa liquidação de inverno e renove o guarda-roupa!</p>
+                </div>
+                <div class="carousel-slide" data-slide-id="3" data-image-url="[COLOQUE O LINK DA FOTO DO BANNER 3 AQUI]">
+                    <h3>Frete Grátis acima de R$ 200</h3>
+                    <p>Compre agora e receba em casa sem custo adicional.</p>
+                </div>
+            </div>
+            <button class="prev-btn">❮</button>
+            <button class="next-btn">❯</button>
+        </section>
+
+        <section id="featured-products">
+            <h2>Produtos em Destaque</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Netclothes. Todos os direitos reservados.</p>
+        <button id="back-to-top-btn">↑</button>
+    </footer>
+
+    <script src="../js/ui-enhancements.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

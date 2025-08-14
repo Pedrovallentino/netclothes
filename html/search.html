@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Pesquisa | Netclothes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">Netclothes</a></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li class="search-container">
+                    <form action="search.html" method="get">
+                        <input type="search" name="q" placeholder="Buscar no site..." id="search-input">
+                        <button type="submit">Pesquisar</button>
+                    </form>
+                </li>
+                <li id="login-link"><a href="login.html">Login</a></li>
+            </ul>
+            <button class="hamburger-menu">☰</button>
+            <button id="theme-toggle">☀️</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-results-section">
+            <h2>Resultados da Pesquisa para "<span id="search-term-display"></span>"</h2>
+            <div id="results-container">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Netclothes. Todos os direitos reservados.</p>
+        <button id="back-to-top-btn">↑</button>
+    </footer>
+
+    <script src="../js/search.js"></script>
+    <script src="../js/ui-enhancements.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

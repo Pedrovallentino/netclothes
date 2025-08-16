@@ -1,58 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Netclothes</title>
+    <title>NetClothes - Login</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
     <header>
         <nav>
-            <h1><a href="index.html">Netclothes</a></h1>
+            <h1><a href="index.html">NetClothes</a></h1>
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li class="search-container">
-                    <form action="search.html" method="get">
-                        <input type="search" name="q" placeholder="Buscar no site...">
-                        <button type="submit">Pesquisar</button>
-                    </form>
-                </li>
-                <li id="login-link"><a href="login.html">Login</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
             </ul>
+            <div class="search-container">
+                <form action="search.html" method="get">
+                    <input type="search" name="q" placeholder="Buscar...">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+            <button id="theme-toggle">🌙</button>
             <button class="hamburger-menu">☰</button>
-            <button id="theme-toggle">☀️</button>
         </nav>
     </header>
 
     <main>
         <section id="login-section">
-            <h2>Acesse sua Conta</h2>
+            <h2>Login</h2>
             <form id="login-form">
                 <div class="form-group">
                     <label for="username">Usuário:</label>
                     <input type="text" id="username" name="username" maxlength="15" required>
-                    <div class="error-message"></div>
+                    <span class="error-message" id="username-error"></span>
                 </div>
                 <div class="form-group">
                     <label for="password">Senha:</label>
                     <input type="password" id="password" name="password" required>
-                    <div class="error-message"></div>
+                    <span class="error-message" id="password-error"></span>
                 </div>
                 <button type="submit">Entrar</button>
+                <p id="login-feedback"></p>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Netclothes. Todos os direitos reservados.</p>
-        <button id="back-to-top-btn">↑</button>
+        <p>&copy; 2025 NetClothes - Todos os direitos reservados.</p>
     </footer>
 
-    <script src="../js/login.js"></script>
     <script src="../js/ui-enhancements.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>
